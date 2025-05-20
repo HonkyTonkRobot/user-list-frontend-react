@@ -3,7 +3,7 @@ export default function Home() {
   return (
     <div className="container">
       <div className="py-4">
-        <table className="table">
+        <table className="table border shadow">
           <thead>
             <tr>
               <th scope="col">#</th>
