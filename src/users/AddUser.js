@@ -15,13 +15,14 @@ export default function AddUser() {
   )
 
   const handleClear = (e) => {
-    setUser(
-      {
-        name: "",
-        username: "",
-        email: ""
-      }
-    )
+    navigate("/")
+    // setUser(
+    //   {
+    //     name: "",
+    //     username: "",
+    //     email: ""
+    //   }
+    // )
   }
 
   const handleChange = (e) => {
