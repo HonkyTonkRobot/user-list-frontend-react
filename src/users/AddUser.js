@@ -14,6 +14,16 @@ export default function AddUser() {
     }
   )
 
+  const handleClear = (e) => {
+    setUser(
+      {
+        name: "",
+        username: "",
+        email: ""
+      }
+    )
+  }
+
   const handleChange = (e) => {
     setUser((prevUser) => ({
       ...prevUser,
@@ -26,8 +36,14 @@ export default function AddUser() {
     e.preventDefault()
     await axios.post("http://localhost:8080/user", user)
     navigate("/")
-    // console.log("form submitted", user)
 
+    setUser(
+      {
+        name: "",
+        username: "",
+        email: ""
+      }
+    )
   }
 
   return <div className="container">
@@ -56,7 +72,7 @@ export default function AddUser() {
             <input type={"text"} className="form-control" placeholder="Enter your email" name="email" value={user.email} onChange={handleChange} />
           </div>
           <button type="submit" className="btn btn-outline-primary">Submit</button>
-          <button type="reset" className="btn btn-outline-danger mx-2">Cancel</button>
+          <button type="reset" className="btn btn-outline-danger mx-2" onClick={handleClear}>Cancel</button>
         </form>
       </div>
     </div >
