@@ -1,10 +1,11 @@
 # Fullstack CRUD app
 
-### Acknowledgements
+**Acknowledgements**
 1. This App was made as a code along with [Code With Arjun](https://www.youtube.com/@CodeWithArjun)
 2. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 3. Minimal AI assistance was used as it was a guided project to help me understand how to code in `java` and `springboot`
     - example: AI was used to figure out how adjust the allotment of numbers supplied in springboot for each run of the backend server from 50 to 1.
+4. Cline AI was used to write this README local deployment guide.
 
 ## Prerequisites
 
